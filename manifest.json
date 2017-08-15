@@ -18,7 +18,7 @@
       "matches": [
         "https://www.facebook.com/"
       ],
-      "js": ["kill.js"],
+      "js": ["src/kill.js"],
       "run_at": "document_end"
     }
   ]
