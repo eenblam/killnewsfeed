@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Kill News Feed",
+  "description": "KNF deletes the News Feed and other stuff from Facebook's UI.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://www.facebook.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/"
+      ],
+      "js": ["kill.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
